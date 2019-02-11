@@ -1,0 +1,14 @@
+:root {
+  --color-primary: #41b695;
+  --color-primary-light: #a2e7b1;
+  --color-secondary: #ff8b00;
+  --color-accent: #ffd712;
+  --color-accent-secondary: #c1e237;
+
+  --font-primary: mr-eaves-modern, sans-serif;
+  --font-secondary: co-text, sans-serif;
+}
+
+html {
+  font-family: var(--font-primary);
+}
