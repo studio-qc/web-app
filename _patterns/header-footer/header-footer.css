@@ -1,0 +1,13 @@
+header {
+  border-bottom: 1px solid #969696;
+}
+
+h1 {
+  color: #41b695;
+}
+
+footer {
+  background-color: #41b695;
+  color: #fff;
+  font-family: var(--font-primary);
+}
