@@ -4,20 +4,33 @@
   <meta charset="utf-8">
   <title>Budget Budgie</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="handheldfriendly" content="true">
-  <meta name="mobileoptimized" content="240">
-  <link href="css/modules.css" rel="stylesheet">
-  <link href="css/grid.css" rel="stylesheet">
-  <link href="css/type.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
+  <link href="../css/main.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.typekit.net/prx2czj.css">
+
 </head>
 <body>
 
-  <h1>Web app</h1>
+{% pattern header-footer/header %}
+<div class="home gutter-2">
+  <div class="grid grid-middle pad-t-2">
+    <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2 unit-xl-1-2 island">
+      <div class="push gutter-2">
+        <div class="push-1-2">
+          {% pattern form-inputs/text-input label="Username" %}
+        </div>
+        {% pattern form-inputs/text-input label="Password" type="password" %}
+      </div>
+      <div class="gutter-2">
+        {% pattern buttons/button button="Sign In" %}
+      </div>
+    </div>
+    <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2 unit-xl-1-2">
+      <img class="img-flex pad-t pad-b" src="../images/banner.svg">
+    </div>
+  </div>
+</div>
 
-  <h2> Dev lead's temporary heading </h2>
-  <h2>Alex's temporary heading</h2>
-  <h2> Nick's temporary heading </h2>
+{% pattern header-footer/footer %}
 
 </body>
 </html>
