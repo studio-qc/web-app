@@ -5,7 +5,7 @@ layout: default
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Budget Budgie</title>
+  <title>Budget Budgie • Login</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="/../css/main.css" rel="stylesheet">
   <link href="/../css/theme.css" rel="stylesheet">
@@ -13,11 +13,21 @@ layout: default
 <body>
 
 {% pattern header-footer/header %}
-<div class="home">
-  <div class="grid grid-middle">
-    <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1-2">
+<div class="home gutter-2">
+  <div class="grid grid-middle pad-t-2">
+    <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2 unit-xl-1-2 island">
+      <div class="push gutter-2">
+        <div class="push-1-2">
+          {% pattern form-inputs/text-input %}
+        </div>
+        {% pattern form-inputs/text-input %}
+      </div>
+      <div class="gutter-2">
+        {% pattern buttons/button %}
+      </div>
     </div>
-    <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1-2">
+    <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2 unit-xl-1-2">
+      <img class="img-flex pad-t pad-b" src="../images/banner.svg">
     </div>
   </div>
 </div>
