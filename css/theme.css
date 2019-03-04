@@ -12,3 +12,7 @@
 html {
   font-family: var(--font-primary);
 }
+
+.home {
+  min-height: 80vh;
+}
