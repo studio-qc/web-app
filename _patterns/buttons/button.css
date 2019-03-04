@@ -10,3 +10,29 @@
   background-color: transparent;
   color: var(--color-secondary);
 }
+
+.button-r {
+  color: #fff;
+  background-color: #FD5637;
+  border: 3px solid #FD5637;
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.button-r:hover {
+  background-color: transparent;
+  color: #FD5637;
+}
+
+.button-g {
+  color: #fff;
+  background-color: var(--color-accent-secondary);
+  border: 3px solid var(--color-accent-secondary);
+  text-decoration: none;
+  border-radius: 6px;
+}
+
+.button-g:hover {
+  background-color: transparent;
+  color: var(--color-accent-secondary);
+}
