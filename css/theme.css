@@ -4,8 +4,10 @@
   --color-secondary: #ff8b00;
   --color-accent: #ffd712;
   --color-accent-secondary: #c1e237;
+  --color-text-primary: #767676;
+  --color-text-secondary: #ADADAD;
 
-  --font-primary: mr-eaves-modern, sans-serif;
+  --font-primary: jaf-domus, sans-serif;
   --font-secondary: co-text, sans-serif;
 }
 
@@ -13,6 +15,35 @@ html {
   font-family: var(--font-primary);
 }
 
-.home {
-  min-height: 80vh;
+h1 {
+  font-family: var(--font-secondary);
+}
+
+h2 {
+  font-family: var(--font-primary);
+  color: var(--color-accent);
+}
+
+h3 {
+  font-family: var(--font-primary);
+  color: var(--color-text-primary);
+}
+
+h4, h5, h6 {
+  font-family: var(--font-primary);
+  color: var(--color-text-primary);
+  font-weight: 300;
+}
+
+p {
+  font-family: var(--font-primary);
+  color: var(--color-text-primary);
+}
+figcaption {
+  font-family: var(--font-primary);
+  color: var(--color-text-secondary);
+}
+
+small {
+  font-weight: 300;
 }

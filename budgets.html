@@ -1,0 +1,20 @@
+---
+layout: default
+title: My Budgets
+---
+
+<main class="wrapper">
+
+  <h2 class="pad-t-2 text-center yotta">my budgets</h2>
+
+  <div class="grid push-2 pad-t-1-2">
+    {% for budget in site.data.budgets %}
+      {% include budget-cards.html progress=budget.progress title=budget.title date=budget.date %}
+    {% endfor %}
+  </div>
+
+  <div class="text-center">
+    <a href="#" class="button gutter mega pad-t-1-8 pad-b-1-8">+ add another budget</a>
+  </div>
+
+</main>
