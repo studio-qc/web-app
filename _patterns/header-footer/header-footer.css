@@ -1,13 +1,16 @@
 header {
-  border-bottom: 1px solid #969696;
+  box-shadow: 0 4px 4px -4px gray;
 }
 
 h1 {
-  color: #41b695;
+  color: var(--color-primary);
 }
 
 footer {
-  background-color: #41b695;
+  background-color: var(--color-primary);
   color: #fff;
   font-family: var(--font-primary);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }

@@ -1,0 +1,7 @@
+patterns:
+  button:
+    padding: 2em
+  button-green:
+    padding: 2em
+  button-red:
+    padding: 2em
