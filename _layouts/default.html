@@ -11,36 +11,12 @@
 </head>
 <body>
 
-  <header>
-    <div class="grid grid-middle wrapper-header-footer">
-      <div class="unit xs-1-2 island-1-4">
-        <h1 class="push-0">budget budgie</h1>
-      </div>
-      <div class="unit xs-1-2 island-1-4">
-        <div class="grid">
-          <div class="unit xs-3-4 text-right">
-            <p class="push-0">username</p>
-            <figcaption class="nano">account details</figcaption>
-          </div>
-          <div class="unit xs-1-4">
-            <i class="icon i-48">
-              <img src="../../../images/contact.svg" alt="contact">
-            </i>
-          </div>
-        </div>
-      </div>
-    </div>
-  </header>
+  {% pattern header-footer/header-account %}
 
   {{content}}
 
-  <footer>
-    <div class="grid grid-middle wrapper-header-footer">
-      <div class="unit xs-1-2 island-1-2">
-        <small class="push-0">© budget budgie 2019</small>
-      </div>
-    </div>
-  </footer>
+  {% pattern header-footer/footer %}
+
 
 </body>
 </html>
