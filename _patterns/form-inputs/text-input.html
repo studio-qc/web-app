@@ -1,2 +1,3 @@
 <h3 class="kilo push-0">{{include.label}}</h3>
-<input type="{{include.type}}" name="fname">
+<input type="{{include.type}}" name="fname" {% if include.pattern %}pattern="{{include.pattern}}"{% endif %}>
+
