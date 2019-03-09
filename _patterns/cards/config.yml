@@ -1,10 +1,10 @@
 patterns:
 
   budget-card:
-    width: 400
+    width: 300
     padding: 2em
     description: |
-      insert text.
+      The budget card is to be used to edit or see information about the exising budget.
 
   button-card:
     width: 400

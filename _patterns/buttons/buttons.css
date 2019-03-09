@@ -1,14 +1,16 @@
-.button {
+.button-o {
   color: #fff;
   background-color: var(--color-secondary);
   border: 3px solid var(--color-secondary);
   text-decoration: none;
   border-radius: 6px;
+  transition: .5s;
 }
 
-.button:hover {
+.button-o:hover {
   background-color: transparent;
   color: var(--color-secondary);
+  transition: .3s;
 }
 
 .button-r {
@@ -17,11 +19,13 @@
   border: 3px solid #FD5637;
   text-decoration: none;
   border-radius: 6px;
+  transition: .5s;
 }
 
 .button-r:hover {
   background-color: transparent;
   color: #FD5637;
+  transition: .3s;
 }
 
 .button-g {
@@ -30,9 +34,11 @@
   border: 3px solid var(--color-accent-secondary);
   text-decoration: none;
   border-radius: 6px;
+  transition: .5s;
 }
 
 .button-g:hover {
   background-color: transparent;
   color: var(--color-accent-secondary);
+  transition: .3s;
 }

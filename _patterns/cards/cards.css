@@ -2,6 +2,14 @@
   box-shadow: 5px 10px #969696;
   border-radius: 8px;
   width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-2 {
+  box-shadow: 5px 10px #969696;
+  border-radius: 8px;
+  width: 400px;
 }
 
 .shadow-effect {
@@ -12,5 +20,65 @@
 }
 
 .change-colour {
-  fill: green;
+  fill: var(--color-text-secondary);
+  transition: .5s
+}
+
+.change-colour:hover {
+  fill: var(--color-accent);
+  transition: .3s
+}
+
+.change-colour-red {
+  fill: var(--color-text-secondary);
+  transition: .5s
+}
+
+.change-colour-red:hover {
+  fill: #FD5637;
+  transition: .3s
+}
+
+.tilt {
+  transform: rotate(45deg);
+}
+
+.progress-bar {
+  border: solid 1px #969696;
+  border-radius: 25px;
+  padding: 10px;
+  width: 100%;
+  max-height: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.progress-gradient {
+  border-radius: 25px;
+  padding: 10px;
+  width: 100%;
+  max-height: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.gradient-red {
+  background: linear-gradient(to right, #F29065, #FF5050);
+}
+
+.gradient-green {
+  background: linear-gradient(to right, #C3EA6D, #6EED9E);
+}
+
+.gradient-purple {
+  background: linear-gradient(to right, #E450FF, #AC65F2);
+}
+
+.progress-handle {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
 }

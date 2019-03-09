@@ -1,7 +1,19 @@
 patterns:
-  button:
-    padding: 2em
+
   button-green:
     padding: 2em
+    description: |
+      The green button should only be used to accept changes or create/add new elements.
+
   button-red:
     padding: 2em
+    description: |
+      The red button should only be used while making changes that will permanently remove/delete elements.
+
+  button:
+    padding: 2em
+    description: |
+      This button should be used to navigate through different areas of the website.
+
+description: |
+  The buttons are used to make permanent actions and take the user to different areas of the website.

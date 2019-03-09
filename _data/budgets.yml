@@ -1,9 +1,15 @@
-- progress: $345/600
+- colour: gradient-red
+  progress: 345.00
+  total: 600.00
   title: Coachella
   date: March 14th, 2019
-- progress: $240/1000
+- colour: gradient-green
+  progress: 240.00
+  total: 1000.00
   title: Renovations
   date: No Date Set
-- progress: $50/120
+- colour: gradient-purple
+  progress: 50.00
+  total: 120.00
   title: Dad's Birthday
   date: May 4th, 2019
