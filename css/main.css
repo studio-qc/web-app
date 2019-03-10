@@ -31,3 +31,22 @@
   }
 
 }
+
+.profile-icon {
+  display: block;
+  margin: auto;
+}
+
+.go-back {
+  color: var(--color-text-secondary);
+}
+
+.banking {
+  border: 2px var(--color-text-secondary) solid;
+  border-radius: 8px;
+  background-color: #f6f6f6;
+}
+
+.back-to h2:hover {
+  color: var(--color-text-primary);
+}

@@ -1,0 +1,48 @@
+---
+layout: default
+title: My Account
+---
+
+<main class="wrapper pad-b-2">
+
+  <div class="gutter-2 back-to">
+    <a href="budgets.html">
+      <h2 class="tera pad-t go-back">back to my budgets</h2>
+    </a>
+  </div>
+  <h2 class="text-center yotta push-0">my account</h2>
+  <div class="center">
+    <svg class="icon profile-icon change-colour-green"><use xlink:href="/images/icons.svg#contact"/></svg>
+    <h1 class="mega center text-center push-2">Johnny Appleseed</h1>
+  </div>
+
+  <div class="grid gutter-2">
+    <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1-2 gutter">
+      <h3 class="mega push-0">name</h3>
+      <h4 class="giga">Johnny Appleseed</h4>
+      <h3 class="mega push-0">email</h3>
+      <h4 class="giga">johnnyappleseed@email.com</h4>
+      <h3 class="mega push-0">password</h3>
+      <h4 class="tera">•••••••••</h4>
+    </div>
+    <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1-2 gutter">
+      <h3 class="mega push-0">address</h3>
+      <h4 class="giga push-0">123 Main St.</h4>
+      <h4 class="giga push-0">Ottawa, ON</h4>
+      <h4 class="giga push-0">A1A 2B2 Canada</h4>
+    </div>
+  </div>
+  <div class="gutter-2 push-2">
+    <h1 class="mega center text-center push gutter-1-2">banking information</h1>
+    <div class="banking gutter-1-2">
+      <h4 class="giga push-0 gutter-1-2">card ending in 1234</h4>
+      <h4 class="giga push-0 gutter-1-2">Expires 6/22</h4>
+    </div>
+  </div>
+  <div class="pad-b-2 text-center">
+    <a href="account-edit.html">
+      {% pattern buttons/button action="edit my account" href="account-edit" %}
+    </a>
+  </div>
+
+</main>
