@@ -1,4 +1,10 @@
-<label for="yes" class="container">
-  <input id="yes" type="checkbox" checked="checked">
-  <span class="checkmark"></span>
-</label>
+  <div class="push-1-2 island-1-2">
+    <h4 class="push-0 text-left pad-t">{{include.label}}</h4>
+    {% unless {{include.extra}}="none" %}
+      <figcaption class="text-left push-1-2">{{include.extra}}</figcaption>
+    {% endunless %}
+    <label for="yes" class="container">
+      <input id="yes" type="checkbox" checked="checked">
+      <span class="checkmark"></span>
+    </label>
+  </div>

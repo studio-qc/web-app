@@ -1,8 +1,14 @@
-<select>
-  <option value="" disabled selected>Select Frequency</option>
-  <option value="non-recurring">Non-Recurring</option>
-  <option value="bi-weekly">Bi-Weekly</option>
-  <option value="weekly">Weekly</option>
-  <option value="bi-monthly">Bi-Monthly</option>
-  <option value="monthly">Monthly</option>
-</select>
+<div class="push-1-2 island-1-2">
+  <h4 class="push-0 text-left pad-t">{{include.label}}</h4>
+  {% unless {{include.extra}}="none" %}
+    <figcaption class="text-left">{{include.extra}}</figcaption>
+  {% endunless %}
+  <select>
+    <option value="" disabled selected>Select Frequency</option>
+    <option value="non-recurring">Non-Recurring</option>
+    <option value="bi-weekly">Bi-Weekly</option>
+    <option value="weekly">Weekly</option>
+    <option value="bi-monthly">Bi-Monthly</option>
+    <option value="monthly">Monthly</option>
+  </select>
+</div>
