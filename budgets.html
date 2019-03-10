@@ -7,6 +7,8 @@ title: My Budgets
 
   <h2 class="pad-t-2 text-center yotta">my budgets</h2>
 
+  {% pattern modal/modal-confirm %}
+
   <div class="grid grid-max-width push pad-t-1-2">
     {% for budget in site.data.budgets %}
       {% include budget-cards.html budget=budget %}
@@ -14,7 +16,7 @@ title: My Budgets
   </div>
 
   <div class="text-center pad-b-2">
-    {% pattern buttons/button-green action="+ new budget" %}
+    {% pattern buttons/button-green href="new-budget" action="+ new budget" %}
   </div>
 
 </main>
