@@ -1,7 +1,7 @@
-<div class="push-1-2">
-  <h4 class="push-0 text-left">{{include.label}}</h4>
+<div class="push-1-2 island-1-2">
+  <h4 class="push-0 text-left pad-t">{{include.label}}</h4>
   {% unless {{include.extra}}="none" %}
     <figcaption class="text-left">{{include.extra}}</figcaption>
   {% endunless %}
-  <input type="{{include.type}}" name="fname" {% if include.pattern %}pattern="{{include.pattern}}"{% endif %}>
+  <input autocomplete="off" type="{{include.type}}" name="fname" {% if include.pattern %}pattern="{{include.pattern}}"{% endif %}>
 </div>

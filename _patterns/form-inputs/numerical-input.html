@@ -1,4 +1,7 @@
-<div>
-  <h4 class="text-left push-0">{{include.label}}</h4>
-  <input type="number" name="fname" min="1">
+<div class="push-1-2 island-1-2">
+  <h4 class="push-0 text-left pad-t">{{include.label}}</h4>
+  {% unless {{include.extra}}="none" %}
+    <figcaption class="text-left">{{include.extra}}</figcaption>
+  {% endunless %}
+  <input autocomplete="off" type="number" name="fname" min="1">
 </div>

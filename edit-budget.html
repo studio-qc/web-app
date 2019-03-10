@@ -5,6 +5,52 @@ title: My Budgets
 
 <main class="wrapper">
 
-  <h2 class="pad-t-2 text-center yotta">edit budgets</h2>
+  <h2 class="push-2 pad-t-2 text-center yotta">edit budgets</h2>
+
+  <div class="grid">
+    <div class="unit xs-1 m-1-2">
+      {% pattern form-inputs/text-input label="budget name" extra="give your budget a title" %}
+    </div>
+    <div class="unit xs-1 m-1-2">
+      {% pattern form-inputs/numerical-input label="budget limit" extra="enter your budget's goal" %}
+    </div>
+    <div class="unit xs-1 m-1-2">
+      {% pattern form-inputs/calender-input label="budget deadline" extra="when would you like to achieve this goal" %}
+    </div>
+    <div class="unit xs-1 m-1-2">
+      000
+    </div>
+  </div>
+
+  <div class="pad-t-2">
+    <hr>
+  </div>
+
+  <div class="grid">
+    <div class="unit xs-1 m-1-2">
+      {% pattern form-inputs/checkbox label="automatic deposits" extra="check this if you would like budget budgie to automatically deposit money into your budget" %}
+    </div>
+    <div class="unit xs-1 m-1-2">
+
+    </div>
+    <div class="unit xs-1 m-1-2">
+      {% pattern form-inputs/text-dropdown label="deposit amount" extra="deposit frequency" %}
+    </div>
+    <div class="unit xs-1 m-1-2">
+      {% pattern form-inputs/numerical-input label="deposit amount" extra="select a frequency for automatic deposits" %}
+    </div>
+  </div>
+
+  <div class="pad-t-2">
+    <hr>
+  </div>
+
+  <div class="text-center push pad-t pad-b">
+    {% pattern buttons/button-green href="budgets" action="save" %}
+  </div>
+
+  <div class="text-center push pad-b-2">
+    {% pattern buttons/button-red href="budgets" action="delete" %}
+  </div>
 
 </main>
