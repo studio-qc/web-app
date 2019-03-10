@@ -43,3 +43,7 @@ footer {
   }
 
 }
+
+text-right a {
+  color: var(--color-text-primary);
+}
