@@ -1,3 +1,7 @@
-<h3 class="kilo push-0">{{include.label}}</h3>
-<input type="{{include.type}}" name="fname" {% if include.pattern %}pattern="{{include.pattern}}"{% endif %}>
-
+<div class="push-1-2">
+  <h4 class="push-0 text-left">{{include.label}}</h4>
+  {% unless {{include.extra}}="none" %}
+    <figcaption class="text-left">{{include.extra}}</figcaption>
+  {% endunless %}
+  <input type="{{include.type}}" name="fname" {% if include.pattern %}pattern="{{include.pattern}}"{% endif %}>
+</div>

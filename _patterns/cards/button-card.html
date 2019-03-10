@@ -5,12 +5,11 @@
     </a>
   </div>
   <div class="gutter pad-b">
-    <h3 class="push">Add funds to Coachella?</h3>
-    <h4 class="text-left push-1-8">amount</h4>
-    <input class="push-1-2" type="text" name="fname">
-    <h4 class="text-left push-0">password</h4>
-    <figcaption class="text-left push-0">this is just to verify it's you</figcaption>
-    <input class="push-2" type="text" name="fname">
-    {% pattern buttons/button-green %}
+    <h3 class="push">Add funds to {{include.title}}?</h3>
+    {% pattern form-inputs/numerical-input label="amount" %}
+    {% pattern form-inputs/text-input label="password" extra="this is just to verify it's you" type="password" %}
+    <div class="pad-t">
+      {% pattern buttons/button-green %}
+    </div>
   </div>
 </div>

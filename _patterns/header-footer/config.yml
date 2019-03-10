@@ -1,0 +1,19 @@
+patterns:
+
+  header-account:
+    padding: 2em
+    description: |
+      This header is the standard header to be used when the user is signed into their account.
+
+  footer:
+    padding: 2em
+    description: |
+      This is the standard footer for all the web app's pages.
+
+  header:
+    padding: 2em
+    description: |
+      This header is to be used only for the landing page, while the user is not logged in.
+
+description: |
+  These are the fixed elements for both the top and bottom of the pages.

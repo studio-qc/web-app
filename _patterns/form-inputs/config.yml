@@ -1,0 +1,29 @@
+patterns:
+
+  calender-input:
+    padding: 2em
+    description: |
+      +
+
+  checkbox:
+    padding: 2em
+    description: |
+      +
+
+  numerical-input:
+    numerical-input: 2em
+    description: |
+      +
+
+  text-dropdown:
+    numerical-input: 2em
+    description: |
+      +
+
+  text-input:
+    numerical-input: 2em
+    description: |
+      +
+
+description: |
+  +
