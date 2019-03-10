@@ -85,3 +85,52 @@ input[type="color"]::-webkit-color-swatch {
 	border: none;
   border-radius: 20px;
 }
+
+.dropbtn {
+  background-color: var(--color-text-secondary);
+  color: white;
+  padding-right: .8em;
+  padding-left: .8em;
+  font-size: 16px;
+  border: none;
+}
+
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 1px 3px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: var(--color-text-primary);}
+
+.drop-icon {
+  max-height: 4em;
+  max-width: 4em;
+}
+
+.drop-icon-main {
+  fill: #fff;
+  max-height: 4.4em;
+  max-width: 4.4em;
+}
+
+.drop-icon
