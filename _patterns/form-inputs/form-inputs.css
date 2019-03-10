@@ -59,3 +59,29 @@ input {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+.container {
+  display: inline-block;
+  cursor: pointer;
+  float: right;
+}
+
+td {
+  border: 0px;
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+  min-height: 2em;
+  min-width: 2em;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: .2em;
+  border: 1px var(--color-text-secondary) solid;
+  border-radius: 7px;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+  border-radius: 20px;
+}
