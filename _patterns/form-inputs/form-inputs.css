@@ -1,8 +1,61 @@
 input {
   border: none;
-  border-bottom: 2px solid #b0b0b0;
+  border-bottom: 2px solid var(--color-text-secondary);
 }
 
-h3 {
-  color: #636363;
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 35px;
+  width: 35px;
+  border: 2px solid var(--color-text-secondary);
+  border-radius: 2px;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: var(--color-secondary);
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+  left: 12px;
+  top: 5px;
+  width: 7px;
+  height: 18px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }
