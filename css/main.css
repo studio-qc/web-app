@@ -54,3 +54,7 @@ hr {
 .back-to h2:hover {
   color: var(--color-text-primary);
 }
+
+.change-colour-orange {
+  fill: var(--color-secondary);
+}
