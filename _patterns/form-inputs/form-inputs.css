@@ -35,7 +35,7 @@ input {
 }
 
 .container input:checked ~ .checkmark {
-  background-color: var(--color-secondary);
+  background-color: var(--color-primary-light);;
 }
 
 .checkmark:after {
@@ -63,7 +63,6 @@ input {
 .container {
   display: inline-block;
   cursor: pointer;
-  float: right;
 }
 
 td {
@@ -76,11 +75,13 @@ input[type="color"] {
   min-height: 2em;
   min-width: 2em;
 }
+
 input[type="color"]::-webkit-color-swatch-wrapper {
 	padding: .2em;
   border: 1px var(--color-text-secondary) solid;
   border-radius: 7px;
 }
+
 input[type="color"]::-webkit-color-swatch {
 	border: none;
   border-radius: 20px;
@@ -95,11 +96,10 @@ input[type="color"]::-webkit-color-swatch {
   border: none;
 }
 
-}
-
 .dropdown {
   position: relative;
   display: inline-block;
+  overflow: visible;
 }
 
 .dropdown-content {
@@ -116,14 +116,25 @@ input[type="color"]::-webkit-color-swatch {
   display: block;
 }
 
-.dropdown-content a:hover {background-color: #ddd;}
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
 
-.dropdown:hover .dropdown-content {display: block;}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
 
-.dropdown:hover .dropbtn {background-color: var(--color-text-primary);}
+.dropdown:hover .dropbtn {
+  background-color: var(--color-text-primary);
+}
+
+.drop-icon-add {
+  max-height: 4em;
+  max-width: 4em;
+}
 
 .drop-icon {
-  max-height: 4em;
+  max-height: 3em;
   max-width: 4em;
 }
 

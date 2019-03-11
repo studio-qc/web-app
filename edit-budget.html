@@ -10,17 +10,20 @@ title: My Budgets
   {% pattern modal/modal-delete %}
 
   <div class="grid">
-    <div class="unit xs-1 m-1-2">
+    <div class="unit xs-1 m-1-2 gutter pad-t">
       {% pattern form-inputs/text-input label="budget name" extra="give your budget a title" %}
     </div>
-    <div class="unit xs-1 m-1-2">
+    <div class="unit xs-1 m-1-2 gutter pad-t">
       {% pattern form-inputs/numerical-input label="budget limit" extra="enter your budget's goal" %}
     </div>
-    <div class="unit xs-1 m-1-2">
+    <div class="unit xs-1 m-1-2 gutter pad-t">
       {% pattern form-inputs/calender-input label="budget deadline" extra="when would you like to achieve this goal" %}
     </div>
-    <div class="unit xs-1 m-1-2">
-      000
+    <div class="unit xs-1-2 m-1-4 text-center gutter pad-t">
+      {% pattern form-inputs/icon-dropdown %}
+    </div>
+    <div class="unit xs-1-2 m-1-4 text-center gutter pad-t">
+      {% pattern form-inputs/icon-dropdown %}
     </div>
   </div>
 
@@ -29,16 +32,16 @@ title: My Budgets
   </div>
 
   <div class="grid">
-    <div class="unit xs-1 m-1-2">
+    <div class="unit xs-1 m-1-2 gutter pad-t">
       {% pattern form-inputs/checkbox label="automatic deposits" extra="check this if you would like budget budgie to automatically deposit money into your budget" %}
     </div>
-    <div class="unit xs-1 m-1-2">
+    <div class="unit xs-1 m-1-2 gutter pad-t">
 
     </div>
-    <div class="unit xs-1 m-1-2">
+    <div class="unit xs-1 m-1-2 gutter pad-t">
       {% pattern form-inputs/text-dropdown label="deposit amount" extra="deposit frequency" %}
     </div>
-    <div class="unit xs-1 m-1-2">
+    <div class="unit xs-1 m-1-2 gutter pad-t">
       {% pattern form-inputs/numerical-input label="deposit amount" extra="select a frequency for automatic deposits" %}
     </div>
   </div>
