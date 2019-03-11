@@ -5,14 +5,9 @@ title: My Account
 
 <main class="wrapper pad-b-2">
 
-  <div class="gutter-2 back-to">
-    <a href="budgets.html">
-      <h2 class="tera pad-t go-back">cancel edit</h2>
-    </a>
-  </div>
-  <h2 class="text-center yotta push-0">my account</h2>
+  <h2 class="text-center yotta push-0 pad-t-2">my account</h2>
   <div class="center push">
-    <svg class="icon profile-icon change-colour-green"><use xlink:href="/images/icons.svg#contact"/></svg>
+    <svg class="icon profile-icon change-colour-orange"><use xlink:href="/images/icons.svg#contact"/></svg>
   </div>
 
   <div class="grid gutter-2">
@@ -33,21 +28,32 @@ title: My Account
       {% pattern form-inputs/text-input label="country" %}
     </div>
   </div>
+
+  <div class="pad-t pad-b">
+    <hr>
+  </div>
+
   <div class="gutter-2 push-2">
-    <h1 class="mega center text-center push gutter-1-2">banking information</h1>
     <div class="gutter">
       {% pattern form-inputs/numerical-input label="card number" %}
       <div class="push-1-2">
         <h4 class="push-0 text-left gutter-1-2">expiration date</h4>
         {% pattern form-inputs/calender-input %}
       </div>
-      {% pattern form-inputs/text-input label="CVC" %}
+      {% pattern form-inputs/numerical-input label="CVC" %}
     </div>
   </div>
-  <div class="pad-b-2 text-center">
-    <a href="account.html">
-      {% pattern buttons/button action="finished editing" href="account" %}
-    </a>
+
+  <div>
+    <hr>
+  </div>
+
+  <div class="text-center push pad-t pad-b">
+    {% pattern buttons/button-green href="account" action="save" %}
+  </div>
+
+  <div class="text-center push pad-b">
+    {% pattern buttons/button-red href="account" action="cancel" %}
   </div>
 
 </main>

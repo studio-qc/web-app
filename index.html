@@ -13,6 +13,9 @@
 <body>
 
 {% pattern header-footer/header %}
+
+{% pattern modal/modal-sign-up %}
+
 <div class="home gutter-2">
   <div class="grid grid-middle pad-t-2">
     <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2 unit-xl-1-2 island">
@@ -23,7 +26,9 @@
         {% pattern form-inputs/text-input label="password" type="password" %}
       </div>
       <div class="gutter-2">
-        {% pattern buttons/button href="budgets" action="sign in" %}
+        <div class="gutter-1-2 pad-t">
+          {% pattern buttons/button href="budgets" action="sign in" %}
+        </div>
       </div>
     </div>
     <div class="unit unit-xs-1 unit-s-1 unit-m-1 unit-l-1-2 unit-xl-1-2">
