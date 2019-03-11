@@ -3,5 +3,5 @@
   {% unless {{include.extra}}="none" %}
     <figcaption class="text-left">{{include.extra}}</figcaption>
   {% endunless %}
-  <input autocomplete="off" type="{{include.type}}" name="fname" {% if include.pattern %}pattern="{{include.pattern}}"{% endif %}>
+  <input autocomplete="off" value="{{include.value}}" type="{{include.type}}" name="fname" {% if include.pattern %}pattern="{{include.pattern}}"{% endif %}>
 </div>

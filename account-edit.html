@@ -1,6 +1,6 @@
 ---
 layout: default
-title: My Account
+title: Budget Budgie • Edit my Account
 ---
 
 <main class="wrapper pad-b-2">
@@ -12,20 +12,20 @@ title: My Account
 
   <div class="grid gutter-2">
     <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1-2 gutter">
-      {% pattern form-inputs/text-input label="name (first and last)" %}
-      {% pattern form-inputs/text-input label="email" %}
-      {% pattern form-inputs/text-input label="password" type="password" %}
-      {% pattern form-inputs/text-input label="confirm password" type="password" %}
+      {% pattern form-inputs/text-input label="name (first and last)" value=" Johnny Appleseed" %}
+      {% pattern form-inputs/text-input label="email" value="johnnyappleseed@email.com" %}
+      {% pattern form-inputs/text-input label="password" type="password" value="•••••••••" %}
+      {% pattern form-inputs/text-input label="confirm password" type="password" value="•••••••••" %}
     </div>
     <div class="unit unit-xs-1 unit-s-1 unit-m-1-2 unit-l-1-2 unit-xl-1-2 gutter">
-      {% pattern form-inputs/text-input label="street address" %}
-      {% pattern form-inputs/text-input label="city" %}
+      {% pattern form-inputs/text-input label="street address" value="123 Gonnamurdernick St." %}
+      {% pattern form-inputs/text-input label="city" value="Ottawa" %}
       <h4 class="push-0 pad-t-1-4 text-left gutter-1-2">province</h4>
       <div class="gutter-1-2 push pad-t-1-4">
-        {% pattern form-inputs/province-dropdown %}
+        {% pattern form-inputs/province-dropdown value="ON" %}
       </div>
-      {% pattern form-inputs/text-input label="postal code" %}
-      {% pattern form-inputs/text-input label="country" %}
+      {% pattern form-inputs/text-input label="postal code" value="A1A 2B2" %}
+      {% pattern form-inputs/text-input label="country" value="Canada" %}
     </div>
   </div>
 
@@ -35,12 +35,14 @@ title: My Account
 
   <div class="gutter-2 push-2">
     <div class="gutter">
-      {% pattern form-inputs/numerical-input label="card number" %}
+      {% pattern form-inputs/numerical-input label="card number" value="1234123412341234" %}
       <div class="push-1-2">
         <h4 class="push-0 text-left gutter-1-2">expiration date</h4>
         {% pattern form-inputs/calender-input %}
       </div>
+
       {% pattern form-inputs/numerical-input label="CVC" %}
+
     </div>
   </div>
 
