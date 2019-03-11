@@ -3,8 +3,8 @@
     <figure class="pad-t-1-2 gutter-1-4 push-0">
       <div class="progress-bar push">
         <div class="{{budget.colour}} progress-gradient" style="width:{{budget.progress | divided_by:budget.total | times:100}}%"></div>
-        <i class="icon i-32 progress-handle" style="left:{{budget.progress | divided_by:budget.total | times:100}}%">
-          <img src="/images/progress-icon-01.svg" alt="icon">
+        <i class="icon i-48 progress-handle" style="left:{{budget.progress | divided_by:budget.total | times:100}}%">
+          <img src="../images/{{budget.icon}}" alt="icon">
         </i>
       </div>
       <figcaption class="micro card-text text-center">${{budget.progress|round}}/{{budget.total|round}}</figcaption>
