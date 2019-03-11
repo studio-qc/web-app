@@ -7,7 +7,9 @@ title: My Budgets
 
   <h2 class="push-2 pad-t-2 text-center yotta">edit budgets</h2>
 
-  <div class="grid grid-middle">
+  {% pattern modal/modal-delete %}
+
+  <div class="grid">
     <div class="unit xs-1 m-1-2 gutter pad-t">
       {% pattern form-inputs/text-input label="budget name" extra="give your budget a title" %}
     </div>
@@ -48,13 +50,12 @@ title: My Budgets
     <hr>
   </div>
 
-  <div class="pad-b-2">
-    <div class="text-center push pad-t pad-b">
-      {% pattern buttons/button-green href="budgets" action="save" %}
-    </div>
-    <div class="text-center push pad-b">
-      {% pattern buttons/button-red href="budgets" action="delete" %}
-    </div>
+  <div class="text-center push pad-t pad-b">
+    {% pattern buttons/button-green href="budgets" action="save" %}
+  </div>
+
+  <div class="text-center push pad-b-2">
+    {% pattern buttons/button-red href="#delete" action="delete" %}
   </div>
 
 </main>

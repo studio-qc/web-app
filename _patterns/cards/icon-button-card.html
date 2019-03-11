@@ -1,0 +1,18 @@
+<div class="card-2 shadow-effect island-1-4 text-center">
+  <div class="text-left">
+    <a class="icon-link" href="#">
+      <svg class="icon i-48 change-colour-red tilt"><use xlink:href="/images/icons.svg#more"/></svg>
+    </a>
+  </div>
+  <i class="icon i-128 push-1-2">
+    <img src="../../../images/budgie-2.svg" alt="budgie">
+  </i>
+  <div class="gutter pad-b">
+    <h3 class="push-1-4">Delete budget {{include.title}}?</h3>
+    <p class="push-0 push">Are you sure? All of your funds will be returned to your account.</p>
+    {% pattern form-inputs/text-input label="password" extra="this is just to verify it's you" type="password" %}
+    <div class="pad-t-1-2">
+      {% pattern buttons/button-red href="budgets#confirm-delete" action="delete budget" %}
+    </div>
+  </div>
+</div>
