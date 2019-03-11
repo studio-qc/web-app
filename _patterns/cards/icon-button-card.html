@@ -9,7 +9,7 @@
   </i>
   <div class="gutter pad-b">
     <h3 class="push-1-4">Delete budget {{include.title}}?</h3>
-    <p class="push-0 push-1-4">Are you sure? All of your funds will be returned to your account.</p>
+    <p class="push-0 push">Are you sure? All of your funds will be returned to your account.</p>
     {% pattern form-inputs/text-input label="password" extra="this is just to verify it's you" type="password" %}
     <div class="pad-t-1-2">
       {% pattern buttons/button-red href="budgets#confirm-delete" action="delete budget" %}
