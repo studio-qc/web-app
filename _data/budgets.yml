@@ -6,6 +6,24 @@
   date: March 14th, 2019
 - colour: gradient-green
   icon: icon-mortgage-gradient.svg
+  progress: 800.00
+  total: 1000.00
+  title: Renovations
+  date: No Date Set
+- colour: gradient-purple
+  icon: icon-gift-gradient.svg
+  progress: 50.00
+  total: 120.00
+  title: Dad's Birthday
+  date: May 4th, 2019
+- colour: gradient-red
+  icon: icon-music-gradient.svg
+  progress: 475.00
+  total: 600.00
+  title: Coachella
+  date: March 14th, 2019
+- colour: gradient-green
+  icon: icon-mortgage-gradient.svg
   progress: 240.00
   total: 1000.00
   title: Renovations
