@@ -11,13 +11,13 @@ title: Budget Budgie • Edit my Budget
 
   <div class="grid">
     <div class="unit xs-1 m-1-2 gutter pad-t">
-      {% pattern form-inputs/text-input label="budget name" extra="give your budget a title" %}
+      {% pattern form-inputs/text-input label="budget name" extra="give your budget a title" value="Coachella" %}
     </div>
     <div class="unit xs-1 m-1-2 gutter pad-t">
-      {% pattern form-inputs/numerical-input label="budget limit" extra="enter your budget's goal" %}
+      {% pattern form-inputs/numerical-input label="budget limit" extra="enter your budget's goal" value="600" %}
     </div>
     <div class="unit xs-1 m-1-2 gutter pad-t">
-      {% pattern form-inputs/calender-input label="budget deadline" extra="when would you like to achieve this goal" %}
+      {% pattern form-inputs/calender-input label="budget deadline" extra="when would you like to achieve this goal" value="2019-03-01" %}
     </div>
     <div class="unit xs-1-2 m-1-4 text-center gutter pad-t">
       {% pattern form-inputs/icon-dropdown %}
@@ -39,10 +39,10 @@ title: Budget Budgie • Edit my Budget
 
     </div>
     <div class="unit xs-1 m-1-2 gutter pad-t">
-      {% pattern form-inputs/text-dropdown label="deposit amount" extra="deposit frequency" %}
+      {% pattern form-inputs/text-dropdown label="deposit amount" extra="select deposit frequency" %}
     </div>
     <div class="unit xs-1 m-1-2 gutter pad-t">
-      {% pattern form-inputs/numerical-input label="deposit amount" extra="select a frequency for automatic deposits" %}
+      {% pattern form-inputs/numerical-input label="deposit amount" extra="enter the amount you would like to deposit" value="100"%}
     </div>
   </div>
 
