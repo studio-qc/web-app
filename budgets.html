@@ -9,6 +9,8 @@ title: My Budgets
 
   {% pattern modal/modal-confirm %}
 
+  {% pattern modal/modal-confirm-delete %}
+
   <div class="grid grid-max-width push pad-t-1-2">
     {% for budget in site.data.budgets %}
       {% include budget-cards.html budget=budget %}

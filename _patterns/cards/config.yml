@@ -16,7 +16,13 @@ patterns:
     width: 400
     padding: 2em
     description: |
-      The cards are used for highlights on the inside pages. For example, they should contain the general information of the budget. They should not be a link themselves, however elements on the card may contain links.
+      The icon cards are used for highlights on the inside pages. For example, they should contain the general information of the budget. They should not be a link themselves, however elements on the card may contain links.
+
+  icon-button-card:
+    width: 400
+    padding: 2em
+    description: |
+      The button icon cards are used to alert the users that they are about to make a permanent action. These cards are also accompanied by a button to confirm the action.
 
 description: |
   The cards provide a way for us to highlight important pieces of information and separate them from the body copy content.
