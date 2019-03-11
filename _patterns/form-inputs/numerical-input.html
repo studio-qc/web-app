@@ -3,5 +3,5 @@
   {% unless {{include.extra}}="none" %}
     <figcaption class="text-left">{{include.extra}}</figcaption>
   {% endunless %}
-  <input autocomplete="off" type="number" name="fname" min="1">
+  <input autocomplete="off" type="number" name="fname" value="{{include.value}}" min="1">
 </div>
