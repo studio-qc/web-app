@@ -60,11 +60,6 @@ input {
   transform: rotate(45deg);
 }
 
-.container {
-  display: inline-block;
-  cursor: pointer;
-}
-
 td {
   border: 0px;
 }
@@ -153,4 +148,25 @@ input[type="color"]::-webkit-color-swatch {
   fill: #fff;
   max-height: 4.4em;
   max-width: 4.4em;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+input[type=checkbox] ~ label {
+  background: transparent;
+  height: 50px;
+  color: var(--color-text-primary);
+  padding: .5em;
+  display: block;
+}
+input[type=checkbox]:checked ~ label ~ .content {
+  opacity: 0;
+  height: 0;
+  display: contents;
+}
+.content {
+  padding: 0;
+  display: none;
+  clear: both;
 }

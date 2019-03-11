@@ -1,0 +1,16 @@
+<div class="push-1-2 island-1-4">
+  <h4 class="push-0 text-left">{{include.label}}</h4>
+  {% unless {{include.extra}}="none" %}
+    <figcaption class="text-left push-1-2">{{include.extra}}</figcaption>
+  {% endunless %}
+    <input type="checkbox" id="toggle">
+    <label for="toggle"></label>
+  <div class="content grid">
+    <div class="unit xs-1 m-1-2 gutter-1-4">
+      {% pattern form-inputs/text-dropdown label="deposit amount" extra="select deposit frequency" %}
+    </div>
+    <div class="unit xs-1 m-1-2 gutter-1-4">
+      {% pattern form-inputs/numerical-input label="deposit amount" extra="enter the amount you would like to deposit" %}
+    </div>
+  </div>
+</div>
