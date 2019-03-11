@@ -3,7 +3,7 @@
   {% unless {{include.extra}}="none" %}
     <figcaption class="text-left push-1-2">{{include.extra}}</figcaption>
   {% endunless %}
-    <input type="checkbox" id="toggle">
+    <input type="checkbox" id="toggle" {{include.checked}}>
     <label for="toggle"></label>
   <div class="content grid">
     <div class="unit xs-1 m-1-2 gutter-1-4">
